@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<section id="login">
+    <img style="width: 100vw;object-fit: cover;position: absolute;height: 130vh;z-index: -11111;" src="https://images.unsplash.com/photo-1600172454520-134a542a2255?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    <div class="inputs">
+        PLEASE ENTER YOUR USERNAME AND PASSWORD !
+        <input type="text" placeholder="username" id="username">
+        <input type="password" placeholder="password" id="password">
+        <input style="background-color: rgba(49, 49, 253, 0.815); color: white;" type="button" value="login" onclick="login()">
+        <p id="error-message" style="color: red; display: none;">Invalid username or password.</p>
+    </div>
+</section>
+<body class="body">
+    <section class="div" id="printcontent">
+        <div class="head-log">
+            <img src="img/a.png" alt="">
+        </div>
+        <div class="head">
+            <div class="photo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwlTyKJZQTzAUHm3ClY49pHSKyWFu1a6l7A&s" id="profilephoto1">
+            </div>
+            <div class="text">
+                <div>
+                    <p class="p1">प्रपत्र (ग)</p>
+                    <p class="p2">(नियम 3 (3) देखिये)</p>
+                    <p class="p3">(मध्यप्रदेश दुकान एवं स्थापना अधिनियम, 1958)</p>
+                    <p class="p4"><strong>स्थापना का पंजीयन प्रमाण पत्र</strong></p>
+                </div>
+                <p class="p5"><strong>भाग - क</strong></p>
+            </div>
+            <!-- <div class="qr">
+                <img src="img/frame.png" id="qr1" alt="">
+            </div> -->
+            <div class="qr" id="qr1">
+                <div class="qrcode"></div>
+            </div>
+        </div>
+
+        <div class="text-div">
+            <p class="p">कार्यालयः <strong>District Labour Office, GWALIOR</strong></p>
+            <p class="p">(1) पंजीयन क्रमांक: <strong id="rno1" class="rno1">GWAL241520SE784565</strong></p>
+            <p class="p">(2) स्थापना का नाम: <strong id="bname1" class="bname1">PAWAN DAIRY</strong></p>
+            <p class="p">(3) स्थापना का (डाक का) पूरा पता: <strong class="adress1">SHIV NAGAR MARGHAT ROAD GWALIOR</strong>
+            </p>
+            <p class="p">(4) स्थापना का कारोबार, व्यापार या व्यवसाय का स्वरुपः <strong>Shop</strong></p>
+            <p class="p">(5) मालिक, प्रबंधक, अभिकर्ता (एजेंट) अथवा अन्य कोई व्यक्ति, जिसके अधीन या नियंत्रण में स्थापना
+                का कार्य संचालन होता हो</strong></p>
+            <div class="tab">
+                <table class="table">
+                    <tr>
+                        <th style="width: 120px;"></th>
+                        <th>नाम</th>
+                        <th style="width: 11.5rem;">पिता / पति का नाम</th>
+                        <th style="width: 23rem;">पता</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left: 3px;">मालिक</td>
+                        <td class="name1">GOURAV PRAJAPATI</td>
+                        <td class="fname1">RAGHUVEER</td>
+                        <td class="adress1">SHIV NAGAR MARGHAT ROAD GWALIOR</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left: 3px;">प्रबंधक</td>
+                        <td class="name1">GOURAV PRAJAPATI</td>
+                        <td class="fname1">RAGHUVEER</td>
+                        <td class="adress1">SHIV NAGAR MARGHAT ROAD GWALIOR</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; padding-left: 3px;">अभिकर्ता</td>
+                        <td style="text-align: left; padding-left: 3px;">N</td>
+                        <td style="text-align: left; padding-left: 3px;"></td>
+                        <td style="text-align: left; padding-left: 3px;">N</td>
+                    </tr>
+                </table>
+            </div>
+            <p class="p6">(6) स्थापना में सेवा नियोजक के रूप में हित रखने बाले अन्य व्यक्ति (व्यक्तियों) यदि कोई हो तो,
+                उनका नाम, पद और राज्य में उसका
+                पूरा पताः</p>
+            <div class="tab">
+                <table class="table">
+                    <tr>
+                        <th style="width: 90px;">स.क्र.</th>
+                        <th>नाम</th>
+                        <th style="width: 150px;">पद</th>
+                        <th style="width: 26.6rem;">पता</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="name1">GOURAV PRAJAPATI</td>
+                        <td>SELF</td>
+                        <td class="adress1">SHIV NAGAR MARGHAT ROAD GWALIOR</td>
+                    </tr>
+
+                </table>
+                <table class="table" style="width: 88%;margin-top: 30px;">
+                    <tbody>
+                        <tr>
+                            <th
+                                style="font-size: 14px; width: 359px;background-color: white; text-align: left;padding-left: 3px;">
+                                (7) सेवायुक्तों की कुल संख्या
+                            </th>
+                            <th style="width: 110px;">पुरुष</th>
+                            <th style="width: 110px;">महिला</th>
+                            <th style="width: 110px;">योग</th>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bolder; text-align: left;padding-left: 3px;">पंजीयन शुल्क Rs.
+                                200.00/-</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="p-text">प्रमाणित किया जाता है कि स्थापना जिसका विवरण ऊपर दिया गया है, मध्यप्रदेश दुकान एवं स्थापना
+                अधिनियम 1958 (क्र. सन 1958) के अंतर्गत आज दिनांक 30/Apr/2024 को पंजीयन की गई है|</p>
+            <div class="sign" style="display: flex;justify-content: flex-end;margin-top: 25px;">
+                <img src="img/s.png" alt="" style="width: 320px;">
+            </div>
+            <div class="tab">
+                <table class="table" style="margin-top: 25px;
+                /* margin-bottom: 9rem; */
+                ">
+                    <tbody>
+                        <tr>
+                            <th colspan="12"
+                                style="font-weight: 900; padding: 0;line-height: 25px; width: 100%; text-align: center;">
+                                History of Registration, Renewal &amp; Amendments
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="width: 50px;padding-bottom: 30px;">Sr.</th>
+                            <th style="width: 100px; line-height: normal; padding-bottom: 30px;">Date of Issue</th>
+                            <th style="width: 100px; line-height: normal; padding-bottom: 30px;">Certificate Type</th>
+                            <th style="width: 100px; line-height: normal; padding-bottom: 30px;">Fees paid</th>
+                            <th style="width: 100px; line-height: normal; padding-bottom: 30px;">Validity</th>
+                            <th style="width: 100px; line-height: normal;">Date of Commencenent of business</th>
+                            <th style="width: 100px; line-height: normal; padding-bottom: 20px;">Date of First
+                                Registration</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>30/04/2024</td>
+                            <td>SERVICE</td>
+                            <td>200.00</td>
+                            <td>Life Time</td>
+                            <td>15/04/2024</td>
+                            <td>30/04/2024</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div style="display: flex; flex-direction: column; gap: 2rem;margin-top: 2rem;" class=" ">
+            <button onclick="myprint()" type="button" class="btn"
+                style="width: 10rem;border-radius: 15px;">Print</button>
+            <button onclick="generateQr()" type="button" class="btn"
+                style="width: 10rem;border-radius: 15px;">ganerateQR</button>
+            
+     </div>
+            <!-- <a href="m_rep" class="w-25"><button type="button" class="btn btn-danger w-100">Cancel</button></a> -->
+        </div>
+
+        <div class="inputs">
+            <div class="form-input">
+                <label>Profile photo :</label>
+                <input type="file" id="profilephoto">
+            </div>
+            <div class="form-input">
+                <label>QR :</label>
+                <input type="file" id="qr">
+            </div>
+            <div class="form-input">
+                <label>Registration no. :</label>
+                <input type="text" id="rno">
+            </div>
+            <div class="form-input">
+                <label>Bussness name :</label>
+                <input type="text" id="bname">
+            </div>
+            <div class="form-input">
+                <label>Address :</label>
+                <input type="text" id="adress">
+            </div>
+            <div class="form-input">
+                <label>Name :</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-input">
+                <label>Father name :</label>
+                <input type="text" id="fname">
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+
+        function myprint() {
+
+            var backup = document.body.innerHTML;
+            var content = document.getElementById("printcontent").innerHTML;
+
+            document.body.innerHTML = content;
+            window.print();
+            document.body.innerHTML = backup;
+        }
+
+                        
+            // Ensure the QR Code container exists
+        const qrContainer = document.querySelector(".qrcode");
+        if (!qrContainer) {
+            console.error("QR Code container (.qrcode) not found!");
+        }
+
+        // Initialize QR Code
+        let qrcode = new QRCode(qrContainer,{
+            colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+        });
+        qrcode.makeCode("Why did you scan me?");
+
+        function generateQr() {
+            // Correct variable name (fixing typo: rnno1 → rno1)
+            const rno1 = document.getElementById("rno1").innerText.trim();
+            const bname1 = document.getElementById("bname1").innerText.trim();
+
+            // Ensure rno1 and bname1 are not empty
+            if (!rno1 || !bname1) {
+                console.warn("Registration no. or Business name is empty, QR code not generated.");
+                return;
+            }
+
+            // Generate QR Code with new data
+            qrcode.makeCode(`SHOP: ${rno1} APP NO. ${bname1} DOA: 30/Apr/2024 TOA: DSC BY LO`);
+        }  //qr code end
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+        const profilephoto1 = document.getElementById("profilephoto1");
+        const profilephoto = document.getElementById("profilephoto");
+
+        const qr1 = document.getElementById("qr1");
+        const qr = document.getElementById("qr");
+
+        profilephoto.addEventListener("change", () => {
+            profilephoto1.src = URL.createObjectURL(profilephoto.files[0]);
+        });
+        qr.addEventListener("change", () => {
+            qr1.innerHTML = '<img src="'+URL.createObjectURL(qr.files[0])+'" alt="">';
+        });
+
+        function updateText(inputElement, className) {
+            document.querySelectorAll(`.${className}`).forEach(el => {
+                el.innerText = inputElement.value;
+            });
+        }
+
+        document.getElementById("rno").addEventListener("input", function () {
+            updateText(this, "rno1");
+        });
+        document.getElementById("bname").addEventListener("input", function () {
+            updateText(this, "bname1");
+        });
+        document.getElementById("adress").addEventListener("input", function () {
+            updateText(this, "adress1");
+        });
+
+        const nameInput = document.getElementById("name");
+    if (nameInput) {
+        nameInput.addEventListener("input", function () {
+            updateText(this, "name1");
+        });
+    }
+
+    const fnameInput = document.getElementById("fname");
+    if (fnameInput) {
+        fnameInput.addEventListener("input", function () {
+            updateText(this, "fname1");
+        });
+    }
+    });
+
+    function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            if(username === "Kira" && password === "admin"){
+                // Successful login
+                document.getElementById("login").style.display = "none";
+                alert("Login successful! Welcome, " + username);
+            } else {
+                // Failed login
+                document.getElementById("error-message").style.display = "block";
+            }
+            
+            // Clear inputs after login attempt
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+    </script>
+</body>
+
+</html>
