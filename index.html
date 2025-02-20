@@ -122,7 +122,7 @@
                 </table>
             </div>
             <p class="p-text">प्रमाणित किया जाता है कि स्थापना जिसका विवरण ऊपर दिया गया है, मध्यप्रदेश दुकान एवं स्थापना
-                अधिनियम 1958 (क्र. सन 1958) के अंतर्गत आज दिनांक 30/Apr/2024 को पंजीयन की गई है|</p>
+                अधिनियम 1958 (क्र. सन 1958) के अंतर्गत आज दिनांक <span id="date"> 30/Apr/2024</span> को पंजीयन की गई है|</p>
             <div class="sign" style="display: flex;justify-content: flex-end;margin-top: 25px;">
                 <img src="img/s.png" alt="" style="width: 320px;">
             </div>
@@ -236,6 +236,7 @@
         function generateQr() {
             // Correct variable name (fixing typo: rnno1 → rno1)
             const rno1 = document.getElementById("rno1").innerText.trim();
+            const date1 = document.getElementById("rno1").innerText.trim();
             const bname1 = document.getElementById("bname1").innerText.trim();
 
             // Ensure rno1 and bname1 are not empty
@@ -245,7 +246,7 @@
             }
 
             // Generate QR Code with new data
-            qrcode.makeCode(`SHOP: ${rno1} APP NO. ${bname1} DOA: 30/Apr/2024 TOA: DSC BY LO`);
+            qrcode.makeCode(`SHOP: ${bname1} APP NO. ${rno1} DOA: ${date1} TOA: DSC BY LO`);
         }  //qr code end
 
         document.addEventListener("DOMContentLoaded", function () {
