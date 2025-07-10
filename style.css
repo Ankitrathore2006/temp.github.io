@@ -139,7 +139,6 @@ body {
 }.form-input{
     display: flex;
         gap: 0.5rem;
-        /* border: 1px solid gray; */
         flex-direction: column;
         padding: 0.5rem;
         width: fit-content;
